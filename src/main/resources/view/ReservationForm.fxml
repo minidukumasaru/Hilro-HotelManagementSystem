@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HilroHotelManagementSystem.controller.reservationFormController">
+   <children>
+      <ImageView fitHeight="1030.0" fitWidth="1550.0">
+         <image>
+            <Image url="@../asssert.icon/170833-dark-color-stone-background-image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="885.0" fitWidth="1350.0" layoutY="73.0">
+         <image>
+            <Image url="@../asssert.icon/f4c2a708f62dd7aabcc763f53e20cf8b.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="406.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE RESERVATION" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="114.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation Id">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="112.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In-Date">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="369.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="638.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="txtRESERVATIONID" layoutX="114.0" layoutY="331.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtDATE" layoutX="112.0" layoutY="418.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtDURATION" layoutX="114.0" layoutY="507.0" prefHeight="35.0" prefWidth="230.0" />
+      <Line endX="557.373046875" layoutX="506.0" layoutY="135.0" startX="-100.0" stroke="RED" strokeWidth="6.0" />
+      <Text layoutX="115.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Out-Date">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1026.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer NIC">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblRESERVATION" layoutX="113.0" layoutY="645.0" prefHeight="285.0" prefWidth="1024.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="100.0" text="Id" />
+            <TableColumn fx:id="colDATE" prefWidth="178.0" text="In-Date" />
+            <TableColumn fx:id="colDURATION" prefWidth="156.0" text="Out-Date" />
+            <TableColumn fx:id="colDescription" minWidth="0.0" prefWidth="188.0" text="Description" />
+            <TableColumn fx:id="colAmount" prefWidth="209.0" text="Amount" />
+            <TableColumn fx:id="colAction" prefWidth="192.0" text="Action" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="combCUSTOMERNIC" layoutX="1028.0" layoutY="240.0" onAction="#combCUSTOMERNICOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <ComboBox fx:id="combROOMID" layoutX="438.0" layoutY="237.0" onAction="#combROOMIDOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <ComboBox fx:id="combUSERID" layoutX="114.0" layoutY="239.0" prefHeight="35.0" prefWidth="230.0" />
+      <Text layoutX="436.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Id">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#aeaeae" layoutX="116.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCUSTOMERNAME" layoutX="1028.0" layoutY="330.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtADDRESS" layoutX="1028.0" layoutY="414.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtCONTACT" layoutX="1028.0" layoutY="491.0" prefHeight="35.0" prefWidth="230.0" />
+      <Text layoutX="1026.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1026.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1026.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1189.0" layoutY="841.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1197.0" layoutY="697.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnPLACEORDER" layoutX="1273.0" layoutY="865.0" mnemonicParsing="false" onAction="#btnPLACEORDEROnAction" prefHeight="35.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: #463C3E;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNETBALANCE" layoutX="1190.0" layoutY="582.0" prefHeight="106.0" prefWidth="139.0" />
+      <Text layoutX="1201.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Balance">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="combMEALID" layoutX="697.0" layoutY="237.0" onAction="#combMEALNAMEOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtMEALNAME" layoutX="568.0" layoutY="321.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtPRICE" layoutX="572.0" layoutY="413.0" prefHeight="35.0" prefWidth="230.0" />
+      <Text layoutX="697.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal Id">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="568.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Name">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="573.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAddToCart" layoutX="1271.0" layoutY="746.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="35.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: #D8DADC;" text="AddToCart">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1157.0" layoutY="708.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1157.0" layoutY="823.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="1215.0" layoutY="859.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-purchase-order-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="48.0" layoutX="1211.0" layoutY="741.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-shopping-96.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

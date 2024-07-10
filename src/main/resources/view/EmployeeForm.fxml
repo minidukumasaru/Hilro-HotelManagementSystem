@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HilroHotelManagementSystem.controller.employeeFormController">
+   <children>
+      <ImageView fitHeight="1030.0" fitWidth="1550.0">
+         <image>
+            <Image url="@../asssert.icon/170833-dark-color-stone-background-image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="885.0" fitWidth="1350.0" layoutY="67.0" opacity="0.9">
+         <image>
+            <Image url="@../asssert.icon/f4c2a708f62dd7aabcc763f53e20cf8b.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="399.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE EMPLOYEE " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="379.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="376.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="339.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="608.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1213.0" layoutY="273.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1204.0" layoutY="186.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1205.0" layoutY="641.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1213.0" layoutY="497.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1204.0" layoutY="413.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEMPLOYEEID" layoutX="377.0" layoutY="230.0" onAction="#txtEMPLOYEEIDOnAction" onKeyReleased="#txtEMPLOYEEIDOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtEMPLOYEENAME" layoutX="375.0" layoutY="302.0" onAction="#txtEMPLOYEENAMEOnAction" onKeyReleased="#txtEMPLOYEENAMEOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtDATE" layoutX="377.0" layoutY="371.0" onAction="#txtDATEOnAction" onKeyReleased="#txtDATEOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtADDRESS" layoutX="377.0" layoutY="439.0" onAction="#txtADDRESSOnAction" onKeyReleased="#txtADDRESSOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtCONTACT" layoutX="377.0" layoutY="508.0" onAction="#txtCONTACTOnAction" onKeyReleased="#txtCONTACTOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtWORKHOURS" layoutX="733.0" layoutY="230.0" onAction="#txtWORKHOURSOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtSALARY" layoutX="733.0" layoutY="302.0" onAction="#txtSALARYOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtPOSITION" layoutX="733.0" layoutY="371.0" onAction="#txtPOSITIONOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtATTENDENCE" layoutX="733.0" layoutY="441.0" onAction="#txtATTENDENCEOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <Button fx:id="btnCLEAR" layoutX="1292.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnCLEAROnAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: light blue;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnSAVE" layoutX="1294.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnSAVEOnAction" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: light blue;" text="SAVE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDELETE" layoutX="1293.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnDELETEOnAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: light blue;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUPDATE" layoutX="1293.0" layoutY="548.0" mnemonicParsing="false" onAction="#btnUPDATEOnAction" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: light blue;" text="UPDATE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSEARCH" layoutX="1295.0" layoutY="666.0" mnemonicParsing="false" onAction="#btnSEARCHOnAction" prefHeight="33.0" prefWidth="163.0" style="-fx-background-color: light blue;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Line endX="417.0" layoutX="543.0" layoutY="123.0" startX="-157.0" stroke="RED" strokeWidth="6.0" />
+      <Text layoutX="378.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="379.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="378.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="734.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Work Hours">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="734.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="733.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="733.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendence">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblEMPLOYEE" layoutX="104.0" layoutY="627.0" onMouseClicked="#tblEMPLOYEEOnAction" prefHeight="320.0" prefWidth="1100.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="87.0" text="Id" />
+          <TableColumn fx:id="colNAME" prefWidth="85.0" text="Name" />
+            <TableColumn fx:id="colDATE" prefWidth="102.0" text="Date" />
+            <TableColumn fx:id="colWORKHOURS" prefWidth="96.0" text="Work Hours" />
+            <TableColumn fx:id="colCONTACT" prefWidth="128.0" text="Contact" />
+            <TableColumn fx:id="colSALARY" prefWidth="129.0" text="Salary" />
+            <TableColumn fx:id="colPOSITION" prefWidth="126.0" text="Position" />
+            <TableColumn fx:id="colATTENDENCE" prefWidth="114.0" text="Attendence" />
+            <TableColumn fx:id="colADDRESS" prefWidth="126.0" text="Address" />
+            <TableColumn fx:id="colUSERID" prefWidth="106.0" text="UserId" />
+        </columns>
+      </TableView>
+      <Text layoutX="734.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="combUSERID" layoutX="733.0" layoutY="508.0" onAction="#combUSERIDOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1173.0" layoutY="169.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1173.0" layoutY="280.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1173.0" layoutY="395.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1173.0" layoutY="508.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1173.0" layoutY="623.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1228.0" layoutY="203.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-clear-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="53.0" layoutX="1227.0" layoutY="427.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-delete-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1232.0" layoutY="313.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-save-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1231.0" layoutY="658.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1230.0" layoutY="543.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-update-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1216.0" layoutY="730.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1176.0" layoutY="741.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDETAILS" layoutX="1294.0" layoutY="781.0" mnemonicParsing="false" onAction="#btnSDETAILSOnAction" prefHeight="33.0" prefWidth="163.0" style="-fx-background-color: light blue;" text="DETAILS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="58.0" fitWidth="68.0" layoutX="1222.0" layoutY="769.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-details-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

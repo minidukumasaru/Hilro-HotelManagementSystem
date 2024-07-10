@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HilroHotelManagementSystem.controller.registerFormController">
+   <children>
+      <ImageView fitHeight="1030.0" fitWidth="1920.0">
+         <image>
+            <Image url="@../asssert.icon/170833-dark-color-stone-background-image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="805.0" fitWidth="401.0" layoutX="130.0" layoutY="105.0">
+         <image>
+            <Image url="@../asssert.icon/HD-wallpaper-abstract-black-white-abstract-backgrounds-black-flat-lines-minimal-modern-simple-white-thumbnail.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="805.0" fitWidth="1346.0" layoutX="458.0" layoutY="105.0">
+         <image>
+            <Image url="@../asssert.icon/f4c2a708f62dd7aabcc763f53e20cf8b.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="805.0" fitWidth="1346.0" layoutX="456.0" layoutY="105.0" opacity="0.61">
+         <image>
+            <Image url="@../asssert.icon/pngtree-metallic-black-gold-texture-three-dimensional-frame-png-image_2313531.png" />
+         </image>
+      </ImageView>
+      <Line endX="285.3974609375" endY="-9.0" layoutX="1066.0" layoutY="238.0" startX="-169.0" startY="-9.0" stroke="#f81717" strokeWidth="6.0" />
+      <TextField fx:id="txtUserId" layoutX="850.0" layoutY="360.0" onAction="#txtUSERIDOnAction" onKeyReleased="#txtUSERIDOnKeyReleased" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" />
+      <Text layoutX="850.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnRegisterNow" layoutX="1024.0" layoutY="768.0" mnemonicParsing="false" onAction="#btnREGISTEROnAction" prefHeight="58.0" prefWidth="235.0" style="-fx-background-color: e63946; -fx-background-radius: 20;" text="REGISTER NOW" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="895.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER FORM">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="850.0" layoutY="450.0" onAction="#txtUSERNAMEOnAction" onKeyReleased="#txtUSERNAMEOnKeyReleased" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" />
+      <Text layoutX="850.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtContact" layoutX="850.0" layoutY="547.0" onAction="#txtCONTACTOnAction" onKeyReleased="#txtCONTACTOnKeyReleased" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" />
+      <TextField fx:id="txtDate" layoutX="1189.0" layoutY="547.0" onAction="#txtDATEOnAction" onKeyReleased="#txtDATEOnKeyReleased" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" />
+      <TextField fx:id="txtPosition" layoutX="1189.0" layoutY="360.0" onAction="#txtPOSITIONOnAction" onKeyReleased="#txtPOSITIONOnKeyReleased" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" />
+      <TextField fx:id="txtPassword" layoutX="1189.0" layoutY="450.0" onAction="#txtPASSWORDOnAction" onKeyReleased="#txtPASSWORDOnKeyReleased" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" />
+      <Text layoutX="850.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1189.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1188.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1189.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="169.0" fitWidth="174.0" layoutX="209.0" layoutY="181.0">
+         <image>
+            <Image url="@../asssert.icon/44699199_313753356085122_7108701595398832128_n.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="157.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H  O  T  E  L " textAlignment="CENTER" wrappingWidth="257.603515625">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Line endX="44.0" layoutX="155.0" layoutY="173.0" startX="44.0" startY="178.0" stroke="RED" strokeWidth="4.0" />
+      <Text fill="WHITE" layoutX="169.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="165.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="163.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="161.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Line endX="48.0" layoutX="151.0" layoutY="171.0" startX="227.0" stroke="RED" strokeWidth="4.0" />
+      <Button fx:id="btnBACK" layoutX="481.0" layoutY="131.0" mnemonicParsing="false" onAction="#btnBACKOnAction" prefHeight="58.0" prefWidth="153.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="      BACK" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="500.0" layoutY="140.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-back-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

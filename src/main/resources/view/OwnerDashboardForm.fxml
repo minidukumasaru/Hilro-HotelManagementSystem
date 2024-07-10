@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1520.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HilroHotelManagementSystem.controller.ownerdashboardFormController">
+   <children>
+      <ImageView fitHeight="1030.0" fitWidth="1520.0">
+         <image>
+            <Image url="@../asssert.icon/3334202.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1030.0" fitWidth="1520.0">
+         <image>
+            <Image url="@../asssert.icon/5c3eed4b352916e94468472e3042e599.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1030.0" fitWidth="1520.0">
+         <image>
+            <Image url="@../asssert.icon/9d49350b7b9e89f3ad1ad1a708833181.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="292.0" fitWidth="306.0" layoutX="87.0" layoutY="269.0">
+         <image>
+            <Image url="@../asssert.icon/Untitled%20gold%20Boarder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="271.0" fitWidth="291.0" layoutX="94.0" layoutY="280.0">
+         <image>
+            <Image url="@../asssert.icon/0517b7de0a28e22560016dda0a306c4f.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="442.0" prefHeight="50.0" prefWidth="198.0" text="Customer Count" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="130.0" fitWidth="138.0" layoutX="94.0" layoutY="298.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-customer-64.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="259.0" layoutY="352.0" prefHeight="90.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: #F3E169;" />
+      <TextField layoutX="265.0" layoutY="355.0" prefHeight="82.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: black;" />
+      <Label fx:id="lblCustomerCount" layoutX="291.0" layoutY="359.0" prefHeight="72.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 20;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font></Label>
+      <ImageView fitHeight="292.0" fitWidth="306.0" layoutX="432.0" layoutY="270.0">
+         <image>
+            <Image url="@../asssert.icon/Untitled%20gold%20Boarder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="271.0" fitWidth="291.0" layoutX="440.0" layoutY="280.0">
+         <image>
+            <Image url="@../asssert.icon/0517b7de0a28e22560016dda0a306c4f.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="448.0" layoutY="436.0" prefHeight="50.0" prefWidth="198.0" text="Employee Count" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="605.0" layoutY="351.0" prefHeight="90.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: #F3E169;" />
+      <TextField layoutX="611.0" layoutY="356.0" prefHeight="82.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: black;" />
+      <Label fx:id="lblEmployeeCount" layoutX="640.0" layoutY="362.0" prefHeight="72.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 20;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font></Label>
+      <ImageView fitHeight="109.0" fitWidth="113.0" layoutX="449.0" layoutY="300.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-employee-64(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="292.0" fitWidth="306.0" layoutX="777.0" layoutY="271.0">
+         <image>
+            <Image url="@../asssert.icon/Untitled%20gold%20Boarder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="271.0" fitWidth="291.0" layoutX="785.0" layoutY="282.0">
+         <image>
+            <Image url="@../asssert.icon/0517b7de0a28e22560016dda0a306c4f.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="951.0" layoutY="351.0" prefHeight="90.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: #F3E169;" />
+      <TextField layoutX="957.0" layoutY="356.0" prefHeight="82.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: black;" />
+      <Label fx:id="lblSupplierCount" layoutX="986.0" layoutY="361.0" prefHeight="72.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 20;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font></Label>
+      <Label layoutX="795.0" layoutY="440.0" prefHeight="50.0" prefWidth="176.0" text="Supplier Count" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="109.0" fitWidth="113.0" layoutX="794.0" layoutY="301.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-supplier-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="292.0" fitWidth="306.0" layoutX="1122.0" layoutY="271.0">
+         <image>
+            <Image url="@../asssert.icon/Untitled%20gold%20Boarder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="271.0" fitWidth="291.0" layoutX="1130.0" layoutY="282.0">
+         <image>
+            <Image url="@../asssert.icon/0517b7de0a28e22560016dda0a306c4f.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="1301.0" layoutY="353.0" prefHeight="90.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: #F3E169;" />
+      <TextField layoutX="1307.0" layoutY="358.0" prefHeight="82.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: black;" />
+      <Label fx:id="lblRoomCount" layoutX="1336.0" layoutY="367.0" prefHeight="72.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 20;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font></Label>
+      <Label layoutX="1189.0" layoutY="459.0" prefHeight="50.0" prefWidth="80.0" text=" Count" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1130.0" layoutY="432.0" prefHeight="50.0" prefWidth="188.0" text="Available Room " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="123.0" layoutX="1139.0" layoutY="301.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-bedroom-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtTIME" layoutX="1229.0" layoutY="118.0" prefHeight="72.0" prefWidth="281.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDATE" layoutX="1229.0" layoutY="46.0" prefHeight="72.0" prefWidth="281.0" text="Label" textFill="#e8e0c4">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUSERNAME" layoutX="92.0" layoutY="100.0" prefHeight="109.0" prefWidth="176.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

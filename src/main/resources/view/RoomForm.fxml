@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HilroHotelManagementSystem.controller.roomFormController">
+   <children>
+      <ImageView fitHeight="1030.0" fitWidth="1530.0">
+         <image>
+            <Image url="@../asssert.icon/170833-dark-color-stone-background-image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="885.0" fitWidth="1350.0" layoutY="74.0">
+         <image>
+            <Image url="@../asssert.icon/f4c2a708f62dd7aabcc763f53e20cf8b.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="438.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE ROOM " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="402.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="402.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="359.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="628.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="txtROOMID" layoutX="402.0" layoutY="291.0" onAction="#txtROOMIDOnAction" onKeyReleased="#txtROOMIDOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtPRICE" layoutX="402.0" layoutY="367.0" onAction="#txtPRICEOnAction" onKeyReleased="#txtPRICEOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtDATE" layoutX="403.0" layoutY="448.0" onAction="#txtDATEOnAction" onKeyReleased="#txtDATEOnKeyReleased" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtAVALIABILITY" layoutX="734.0" layoutY="291.0" onAction="#txtAVALIABILITYOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtDESCRIPTION" layoutX="733.0" layoutY="365.0" onAction="#txtDESCRIPTIONOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1223.0" layoutY="275.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1214.0" layoutY="188.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1215.0" layoutY="643.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1223.0" layoutY="499.0" style="-fx-background-color: #D8DADC;">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="336.0" layoutX="1214.0" layoutY="415.0">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-581.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCLEAR" layoutX="1300.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnCLEAROnAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-radius: 20; -fx-background-color: light blue;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSAVE" layoutX="1294.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnSAVEOnAction" prefHeight="35.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: light blue;" text="SAVE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDELETE" layoutX="1301.0" layoutY="438.0" mnemonicParsing="false" onAction="#btnDELETEOnAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-radius: 20; -fx-background-color: light blue;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUPDATE" layoutX="1301.0" layoutY="549.0" mnemonicParsing="false" onAction="#btnUPDATEOnAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-radius: 20; -fx-background-color: light blue;" text="UPDATE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSEARCH" layoutX="1300.0" layoutY="664.0" mnemonicParsing="false" onAction="#btnSEARCHOnAction" prefHeight="40.0" prefWidth="163.0" style="-fx-background-radius: 20; -fx-background-color: light blue;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Line endX="332.0" layoutX="539.0" layoutY="147.0" startX="-100.0" stroke="RED" strokeWidth="6.0" />
+      <Text layoutX="404.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="736.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avaliability">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="733.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblROOM" layoutX="138.0" layoutY="594.0" onMouseClicked="#tblROOMOnAction" prefHeight="341.0" prefWidth="1056.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="156.0" text="Id" />
+            <TableColumn fx:id="colPRICE" prefWidth="161.0" text="Price" />
+            <TableColumn fx:id="colDATE" prefWidth="212.0" text="Date" />
+            <TableColumn fx:id="colAVALIABILITY" prefWidth="155.0" text="Avaliability" />
+            <TableColumn fx:id="colDESCRIPTION" prefWidth="192.0" text="Description" />
+            <TableColumn fx:id="colType" prefWidth="179.0" text="Type" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtType" layoutX="734.0" layoutY="449.0" onAction="#txtTYPEOnAction" prefHeight="35.0" prefWidth="230.0" />
+      <Text layoutX="737.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1183.0" layoutY="171.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1183.0" layoutY="282.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1183.0" layoutY="397.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1183.0" layoutY="510.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1183.0" layoutY="625.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1238.0" layoutY="205.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-clear-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="53.0" layoutX="1237.0" layoutY="429.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-delete-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1242.0" layoutY="315.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-save-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1241.0" layoutY="660.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1240.0" layoutY="545.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-update-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="318.0" layoutX="1226.0" layoutY="732.0" style="-fx-background-color: #D8DADC;">
+         <image>
+            <Image url="@../asssert.icon/button-set-web-glossy-black-gold_213267-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="163.0" layoutX="1186.0" layoutY="743.0">
+         <image>
+            <Image url="@../asssert.icon/images%20(3).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDETAILS" layoutX="1301.0" layoutY="779.0" mnemonicParsing="false" onAction="#btnDETAILSOnAction" prefHeight="40.0" prefWidth="163.0" style="-fx-background-radius: 20; -fx-background-color: light blue;" text="DETAILS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="65.0" fitWidth="72.0" layoutX="1229.0" layoutY="767.0">
+         <image>
+            <Image url="@../asssert.icon/icons8-details-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RoomReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7ff9e69b-5b56-496a-884b-08bb3ab3510d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (11)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from `Hilro_hotel`.`Room`]]>
+	</queryString>
+	<field name="RoomId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RoomId"/>
+		<property name="com.jaspersoft.studio.field.label" value="RoomId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Room"/>
+	</field>
+	<field name="Price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Price"/>
+		<property name="com.jaspersoft.studio.field.label" value="Price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Room"/>
+	</field>
+	<field name="Date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Room"/>
+	</field>
+	<field name="Avaliability" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Avaliability"/>
+		<property name="com.jaspersoft.studio.field.label" value="Avaliability"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Room"/>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Description"/>
+		<property name="com.jaspersoft.studio.field.label" value="Description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Room"/>
+	</field>
+	<field name="Type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Type"/>
+		<property name="com.jaspersoft.studio.field.label" value="Type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Room"/>
+	</field>
+	<group name="RoomId">
+		<groupExpression><![CDATA[$F{RoomId}]]></groupExpression>
+	</group>
+	<group name="Price">
+		<groupExpression><![CDATA[$F{Price}]]></groupExpression>
+	</group>
+	<group name="Date">
+		<groupExpression><![CDATA[$F{Date}]]></groupExpression>
+	</group>
+	<group name="Avaliability">
+		<groupExpression><![CDATA[$F{Avaliability}]]></groupExpression>
+	</group>
+	<group name="Description">
+		<groupExpression><![CDATA[$F{Description}]]></groupExpression>
+	</group>
+	<group name="Type">
+		<groupExpression><![CDATA[$F{Type}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<image>
+				<reportElement x="142" y="6" width="80" height="70" uuid="48242ddd-f537-492e-9174-31b266872412"/>
+				<imageExpression><![CDATA["/home/tinka/Pictures/44699199_313753356085122_7108701595398832128_n.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="220" y="22" width="150" height="59" uuid="ed504fda-7476-4422-a3a2-dea0a358b577"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Balangoda Road,Galhira Junction,Opanayaka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="3" width="130" height="25" uuid="9dcccc22-b8a9-4ec5-b306-7d77e6a0054c"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Hilro Hotel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="246" y="63" width="100" height="30" uuid="ab8dbfca-6995-41a2-9943-65ab93a4f90d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tel-0767857175]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="0" width="100" height="30" uuid="d4145f1c-6c5b-4014-b9bd-08794d59e751">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="daedb7e0-987e-4143-ab14-34efa8dbf37e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[RoomId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="0" width="100" height="30" uuid="289d7168-ceaa-4021-8d62-3567e27384d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2bba9699-2a6f-45b0-8130-1cb7900e6022"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="0" width="100" height="30" uuid="c0f0c9da-1e86-4ab0-8522-c52de1512e23">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe524d08-770b-48d7-8cef-1b8732e672eb"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Avaliability]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="100" height="30" uuid="a7639bd2-1ffe-457f-83da-97b2b0a096b0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8062d77d-ed3f-4204-b884-3fa8c173c4fc"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="0" width="100" height="30" uuid="eefdd447-b980-417a-9ef3-485dcb909fdc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a0c8fdb-fd68-4ebe-b536-f5f31c35781b"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="29" y="0" width="100" height="30" uuid="7665a320-daae-4197-bc0d-f470d1e0b8e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="daedb7e0-987e-4143-ab14-34efa8dbf37e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{RoomId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="0" width="100" height="30" uuid="567999cb-f79a-468d-b373-67dc97d179e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2bba9699-2a6f-45b0-8130-1cb7900e6022"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="3a8ce21e-1c55-4513-a4ea-4c04c51bbaad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe524d08-770b-48d7-8cef-1b8732e672eb"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Avaliability}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="f5d31059-6247-45b5-969d-ef445e389ac4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8062d77d-ed3f-4204-b884-3fa8c173c4fc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="100" height="30" uuid="39f4ad73-93a6-4d24-9e40-6c33e6ad6ab9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a0c8fdb-fd68-4ebe-b536-f5f31c35781b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Type}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="20" width="160" height="30" uuid="0d5f8826-f9e6-4cce-9b75-17b1290c491b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[HAVE A NICE DAY....!]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

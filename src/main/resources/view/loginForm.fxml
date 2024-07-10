@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HilroHotelManagementSystem.controller.loginFormController">
+   <children>
+      <ImageView fitHeight="1030.0" fitWidth="1920.0">
+         <image>
+            <Image url="@../asssert.icon/44541301_312821312844993_5246450453557805056_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="948.0" fitWidth="698.0" layoutX="53.0" layoutY="33.0" opacity="0.39">
+         <image>
+            <Image url="@../asssert.icon/png-clipart-button-chart-user-interface-fine-website-search-bar-user-interface-design-rectangle.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="146.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="142.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnLogin" layoutX="308.0" layoutY="707.0" mnemonicParsing="false" onAction="#btnLOGINOnAction" prefHeight="58.0" prefWidth="188.0" style="-fx-background-color: e63946; -fx-background-radius: 30;" text="LOGIN" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="188.0" layoutX="1706.0" layoutY="27.0" opacity="0.75">
+         <image>
+            <Image url="@../asssert.icon/44699199_313753356085122_7108701595398832128_n.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="143.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOTEL HILRO">
+         <font>
+            <Font name="System Bold Italic" size="70.0" />
+         </font>
+      </Text>
+      <Line endX="363.2734375" endY="-9.0" layoutX="305.0" layoutY="201.0" startX="-169.0" startY="-9.0" stroke="#f81717" strokeWidth="8.0" />
+      <Text fill="WHITE" layoutX="192.0" layoutY="825.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an Account?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUsername" layoutX="143.0" layoutY="363.0" onAction="#txtUsernameOnAction" prefHeight="65.0" prefWidth="520.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Button fx:id="btnREGISTERNOW" layoutX="449.0" layoutY="801.0" mnemonicParsing="false" onAction="#btnREGISTEROnAction" prefHeight="35.0" prefWidth="185.0" style="-fx-background-color: light blue; -fx-opacity: 40;" text="Register Now" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtPassword" layoutX="143.0" layoutY="565.0" onAction="#txtPasswordOnAction" prefHeight="65.0" prefWidth="520.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
